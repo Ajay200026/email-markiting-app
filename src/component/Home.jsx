@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const Home = () => {
   return (
-    <div style={{ backgroundImage: "url('/public/email.png')", opacity: 0.5 }}>
+    <div>
       <Navbar />
       <div className="mt-0">
         <Sidebar />
