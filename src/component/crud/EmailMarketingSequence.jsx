@@ -23,6 +23,7 @@ const EmailMarketingSequence = () => {
   const [emails, setEmails] = useState([]);
   const [showLetter, setShowLetter] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
+  const [currentStep, setCurrentStep] = useState("wait");
   const [selectedEmail, setSelectedEmail] = useState({
     _id: "",
     email: "",
@@ -34,6 +35,7 @@ const EmailMarketingSequence = () => {
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const handleShowLetter = () => {
     setShowLetter(true);
+    setCurrentStep("wait");
   };
 
   useEffect(() => {
@@ -130,7 +132,7 @@ const EmailMarketingSequence = () => {
   };
 
   return (
-    <div>
+    <div className="w-[1050px]">
       <Button
         variant="contained"
         color="primary"
@@ -147,7 +149,7 @@ const EmailMarketingSequence = () => {
         Add Email
       </Button>
 
-      <TableContainer component={Paper}>
+      <TableContainer className="mt-8" component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
