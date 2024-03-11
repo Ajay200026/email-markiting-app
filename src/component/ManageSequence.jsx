@@ -10,6 +10,14 @@ const ManageSequence = () => {
         <Sidebar />
         <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
           <h1>Setting</h1>
+          <div
+            style={{
+              height: "500px",
+              border: "1px solid #ddd",
+              borderRadius: "10px",
+              overflow: "hidden",
+            }}
+          ></div>
         </Box>
       </Box>
     </>

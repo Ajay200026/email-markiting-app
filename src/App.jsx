@@ -9,6 +9,8 @@ import Home from "./component/Home";
 import ManageSequence from "./component/ManageSequence";
 import ModifySequence from "./component/ModifySequence";
 import Profile from "./component/Profile";
+import DecisionComponent from "./component/React-flow/components/DecisionComponent";
+import SendComponent from "./component/React-flow/components/SendComponent";
 import Setting from "./component/Setting";
 import EmailLetterForm from "./component/crud/EmailLetterForm";
 import KanbanBoard from "./component/crud/KanbanBoard";
@@ -39,6 +41,8 @@ const App = () => {
         <Route path="/helpcenter" element={<HelpCenter />} />
         <Route path="/emailletterform" element={<EmailLetterForm />} />
         <Route path="/kanbanboard" element={<KanbanBoard />} />
+        <Route path="/decision" element={<DecisionComponent />} />
+        <Route path="/send" element={<SendComponent />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

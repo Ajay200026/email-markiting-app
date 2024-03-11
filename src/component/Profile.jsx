@@ -1,19 +1,7 @@
-import Box from "@mui/material/Box";
 import React from "react";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+
 const Profile = () => {
-  return (
-    <>
-      <Navbar />
-      <Box sx={{ display: "flex" }}>
-        <Sidebar />
-        <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
-          <h1>Setting</h1>
-        </Box>
-      </Box>
-    </>
-  );
+  return <div style={{ width: "70%", height: "500px" }}></div>;
 };
 
 export default Profile;
